@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import { withNamespaces } from 'react-i18next'
+import { withTranslation } from 'react-i18next'
 
 class Filter extends React.Component {
   static propTypes = {
@@ -26,4 +26,4 @@ class Filter extends React.Component {
   }
 }
 
-export default withNamespaces()(Filter)
+export default withTranslation()(Filter)

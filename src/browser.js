@@ -23,7 +23,7 @@ import { SortByName } from './sorters'
 
 import { isFolder } from './utils'
 import { DefaultAction } from './actions'
-import { withNamespaces } from 'react-i18next'
+import { withTranslation } from 'react-i18next'
 
 const SEARCH_RESULTS_PER_PAGE = 20
 const regexForNewFolderOrFileSelection = /.*\/__new__[/]?$/gm
@@ -928,5 +928,5 @@ class RawFileBrowser extends React.Component {
 // @DragDropContext(HTML5Backend)
 class FileBrowser extends RawFileBrowser { }
 
-export default withNamespaces()(FileBrowser)
+export default withTranslation()(FileBrowser)
 export { RawFileBrowser }

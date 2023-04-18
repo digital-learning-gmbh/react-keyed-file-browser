@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import { withNamespaces } from 'react-i18next'
+import { withTranslation } from 'react-i18next'
 
 class Detail extends React.Component {
   static propTypes = {
@@ -41,4 +41,4 @@ class Detail extends React.Component {
   }
 }
 
-export default withNamespaces()(Detail)
+export default withTranslation()(Detail)
