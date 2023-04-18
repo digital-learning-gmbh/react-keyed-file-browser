@@ -7,7 +7,7 @@ import BaseFolder, { BaseFolderConnectors } from './../base-folder.js'
 import { BaseFileConnectors } from './../base-file.js'
 
 import { isFolder } from '../utils'
-import { withTranslation } from 'react-i18next'
+import { withNamespaces } from 'react-i18next'
 
 class RawListThumbnailFolder extends BaseFolder {
   render() {
@@ -131,5 +131,5 @@ class RawListThumbnailFolder extends BaseFolder {
 )
 class ListThumbnailFolder extends RawListThumbnailFolder {}
 
-export default withTranslation()(ListThumbnailFolder)
+export default withNamespaces()(ListThumbnailFolder)
 export { RawListThumbnailFolder }

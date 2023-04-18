@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { withTranslation } from 'react-i18next'
+import { withNamespaces } from 'react-i18next'
 
 const ConfirmDeletion = (props) => {
   const { t } = props
@@ -40,4 +40,4 @@ ConfirmDeletion.defaultProps = {
   url: '#',
 }
 
-export default withTranslation()(ConfirmDeletion)
+export default withNamespaces()(ConfirmDeletion)

@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { withTranslation } from 'react-i18next'
+import { withNamespaces } from 'react-i18next'
 
 const Actions = (props) => {
   const { t } = props
@@ -320,4 +320,4 @@ Actions.defaultProps = {
   onFileDoubleClick: null,
 }
 
-export default withTranslation()(Actions)
+export default withNamespaces()(Actions)

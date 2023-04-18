@@ -5,7 +5,7 @@ import { NativeTypes } from 'react-dnd-html5-backend'
 
 import BaseFolder, { BaseFolderConnectors } from './../base-folder.js'
 import { BaseFileConnectors } from './../base-file.js'
-import { withTranslation } from 'react-i18next'
+import { withNamespaces } from 'react-i18next'
 
 class RawTableFolder extends BaseFolder {
   render() {
@@ -117,5 +117,5 @@ class RawTableFolder extends BaseFolder {
 )
 class TableFolder extends RawTableFolder {}
 
-export default withTranslation()(TableFolder)
+export default withNamespaces()(TableFolder)
 export { RawTableFolder }

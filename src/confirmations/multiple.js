@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { withTranslation } from 'react-i18next'
+import { withNamespaces } from 'react-i18next'
 
 const MultipleConfirmDeletion = (props) => {
   const { t } = props
@@ -19,4 +19,4 @@ MultipleConfirmDeletion.propTypes = {
   handleDeleteSubmit: PropTypes.func,
 }
 
-export default withTranslation()(MultipleConfirmDeletion)
+export default withNamespaces()(MultipleConfirmDeletion)

@@ -6,7 +6,7 @@ import { DropTarget } from 'react-dnd'
 import { NativeTypes } from 'react-dnd-html5-backend'
 
 import { BaseFileConnectors } from './../base-file.js'
-import { withTranslation } from 'react-i18next'
+import { withNamespaces } from 'react-i18next'
 import { BROWSER_COLUMNS } from '../browser'
 
 class RawTableHeader extends React.Component {
@@ -64,5 +64,5 @@ class RawTableHeader extends React.Component {
 )
 class TableHeader extends RawTableHeader {}
 
-export default withTranslation()(TableHeader)
+export default withNamespaces()(TableHeader)
 export { RawTableHeader }
