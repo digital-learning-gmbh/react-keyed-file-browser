@@ -54,6 +54,7 @@ class RawFileBrowser extends React.Component {
     files: PropTypes.arrayOf(PropTypes.shape({
       key: PropTypes.string.isRequired,
       modified: PropTypes.number,
+      createdAt: PropTypes.number,
       size: PropTypes.number,
       backend: PropTypes.object,
       icon: PropTypes.element, /* Override icon of the item. */
@@ -217,7 +218,7 @@ class RawFileBrowser extends React.Component {
       return exactFolder
     }
     if (hasPrefix) {
-      return { key, modified: 0, size: 0, relativeKey: key }
+      return { key, modified: 0, size: 0, relativeKey: key, createdAt: 0 }
     }
   }
 
