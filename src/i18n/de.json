@@ -5,7 +5,7 @@
     "file" : "Datei",
     "size": "Größe",
     "lastModified" : "Zuletzt geändert",
-    "createdAt" : "Erstellt"
+    "createdAt" : "Erstellt",
 
 
     "deleting"  : "Lösche...",
