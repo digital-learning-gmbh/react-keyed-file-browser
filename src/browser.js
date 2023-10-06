@@ -33,6 +33,7 @@ export const BROWSER_COLUMNS =
     FILE: 'file',
     SIZE: 'size',
     LAST_MODIFIED: 'lastModified',
+    CREATED_AT: 'createdAt'
   }
 
 function getItemProps(file, browserProps) {
