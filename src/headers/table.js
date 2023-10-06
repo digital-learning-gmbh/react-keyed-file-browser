@@ -42,6 +42,7 @@ class RawTableHeader extends React.Component {
         {this.props.columns?.includes(BROWSER_COLUMNS.FILE) ? <th>{t('file')}</th> : null}
         {this.props.columns?.includes(BROWSER_COLUMNS.SIZE) ? <th className="size">{t('size')}</th> : null}
         {this.props.columns?.includes(BROWSER_COLUMNS.LAST_MODIFIED) ? <th className="modified">{t('lastModified')}</th> : null}
+        {this.props.columns?.includes(BROWSER_COLUMNS.CREATED_AT) ? <th className="createdAt">{t('createdAt')}</th> : null}
       </tr>
     )
 

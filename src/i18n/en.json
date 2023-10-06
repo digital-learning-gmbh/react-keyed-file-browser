@@ -5,6 +5,7 @@
     "file" : "File",
     "size": "Size",
     "lastModified" : "Last Modified",
+    "createdAt" : "Created at",
 
 
     "deleting"  : "Deleting...",

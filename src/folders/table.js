@@ -85,6 +85,7 @@ class RawTableFolder extends BaseFolder {
         </td>
         <td />
         <td />
+            <td />
       </tr>
     )
 
@@ -98,6 +99,7 @@ class RawTableFolder extends BaseFolder {
                 <i>{t('noItemsInThisFolder')}</i>
               </div>
             </td>
+            <td />
             <td />
             <td />
           </tr>

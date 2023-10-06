@@ -14,7 +14,7 @@ class RawTableFile extends BaseFile {
     const {
       isDragging, isDeleting, isRenaming, isOver, isSelected,
       action, url, browserProps, connectDragPreview,
-      depth, size, modified, columns, icon,
+      depth, size, modified, columns, icon, createdAt
     } = this.props
 
     const fileIcon = icon ?? (browserProps.icons[this.getFileType()] || browserProps.icons.File)
@@ -90,6 +90,11 @@ class RawTableFile extends BaseFile {
         {columns?.includes(BROWSER_COLUMNS.LAST_MODIFIED)
           ? <td className="modified">
             {typeof modified === 'undefined' ? '-' : formatDistanceToNow(modified, { addSuffix: true, locale: getDateFnsLocale() })}
+          </td>
+          : null}
+        {columns?.includes(BROWSER_COLUMNS.CREATED_AT)
+          ? <td className="createdAt">
+            {typeof createdAt === 'undefined' ? '-' : formatDistanceToNow(createdAt, { addSuffix: true, locale: getDateFnsLocale() })}
           </td>
           : null}
       </tr>
