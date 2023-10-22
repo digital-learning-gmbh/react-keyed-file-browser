@@ -94,7 +94,7 @@ class RawTableFile extends BaseFile {
           : null}
         {columns?.includes(BROWSER_COLUMNS.CREATED_AT)
           ? <td className="createdAt">
-            {typeof createdAt === 'undefined' ? '-' : formatDistanceToNow(createdAt, { addSuffix: true, locale: getDateFnsLocale() })}
+            {typeof createdAt === 'undefined' ? '-' : createdAt}
           </td>
           : null}
       </tr>
